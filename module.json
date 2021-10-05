@@ -1,0 +1,10 @@
+{
+  "name": "shared-data",
+  "title": "Shared Data",
+  "description": "Shared Data",
+  "auther": "profil6",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "0.8.9",
+  "scripts": ["scripts/SharedDataPopup.js", "scripts/index.js"]
+}

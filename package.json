@@ -1,0 +1,19 @@
+{
+  "name": "shared-data",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Sean Greenhow <sean@hamburg.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "@league-of-foundry-developers/foundry-vtt-types": "^0.8.9-4",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "yarn tsc && yarn bundle:assets",
+    "bundle:assets": "cp module.json build && cp -rT assets/ build/assets && cp -rT packs/ build/packs",
+    "clean:build": "rm -rf build/*",
+    "clean:local": "rm -rf C:/Users/Sean/AppData/Local/FoundryVTT/Data/modules/shared-data",
+    "deploy:local": "cp -rT build/ C:/Users/Sean/AppData/Local/FoundryVTT/Data/modules/shared-data",
+    "dev": "yarn build && yarn clean:local && yarn deploy:local"
+  }
+}
